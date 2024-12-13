@@ -14,7 +14,7 @@ val Pink40 = Color(0xFF7D5260)
 val ButtonBackGround = Color(0xFF008F8C)
 val ButtonTextColor = Color(0xFFFFFFFF)
 val PrimaryTextColor = Color(0xFF0D0D0D)
-val ScondaryTextColor = Color(0xFF636363)
+val SecondaryTextColor = Color(0xFF636363)
 val StarColor = Color(0xFFFFEE58)
 
 //Custom Dark Color
