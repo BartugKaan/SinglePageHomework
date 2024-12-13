@@ -106,7 +106,7 @@ fun MainScreen(darktheme: Boolean = isSystemInDarkTheme()){
                         color = if (darktheme) PrimaryTextColorDark else PrimaryTextColor,
                     )
                     Text(
-                        "$99",
+                        stringResource(R.string.price),
                         fontSize = 30.sp,
                         color = if (darktheme) ButtonBackGroundDark else ButtonBackGround,
                     )
@@ -180,7 +180,7 @@ fun ColorButton(ButtonColor: Color){
 }
 
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, locale = "tr")
 @Composable
 fun GreetingPreview() {
     SinglePageHomeworkTheme {

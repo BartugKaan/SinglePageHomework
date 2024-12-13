@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tech Shop</string>
+    <string name="price">3500₺</string>
+    <string name="about_title">Ürün Hakkında</string>
+    <string name="about_desc">JBL E55BT kablosuz kulak üstü kulaklıklar, JBL kulaklıkların imza sesini doğrudan kulaklarınıza getiriyor. E55BT, şimdiye kadarki en çok yönlü paketlerimizden biri.</string>
+    <string name="color_title">Ürün Rengi: </string>
+    <string name="cart_button_title">Sepete Ekle</string>
+</resources>
