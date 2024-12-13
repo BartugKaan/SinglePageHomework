@@ -16,6 +16,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.ArrowBack
+import androidx.compose.material.icons.rounded.FavoriteBorder
 import androidx.compose.material.icons.rounded.ShoppingCart
 import androidx.compose.material.icons.rounded.Star
 import androidx.compose.material3.Button
@@ -78,6 +80,13 @@ fun MainScreen(darktheme: Boolean = isSystemInDarkTheme()){
                 containerColor = if(darktheme) ButtonBackGroundDark else ButtonBackGround,
                 titleContentColor = if (darktheme) ButtonTextColorDark else ButtonTextColor
             ),
+            navigationIcon = {
+                Icon(Icons.Rounded.ArrowBack, contentDescription = "", tint = if (darktheme) ButtonTextColorDark else ButtonTextColor )
+            },
+            actions = {
+                Icon(Icons.Rounded.FavoriteBorder, contentDescription = "", tint = if (darktheme) ButtonTextColorDark else ButtonTextColor , modifier = Modifier.padding(end = 10.dp))
+            }
+
         )
     }) { paddingValues ->
         Column(
