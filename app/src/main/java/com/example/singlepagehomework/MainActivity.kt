@@ -33,6 +33,7 @@ import androidx.compose.ui.geometry.RoundRect
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -127,10 +128,9 @@ fun MainScreen(darktheme: Boolean = isSystemInDarkTheme()){
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.Start
             ) {
-                Text("About", fontSize = 20.sp)
+                Text(stringResource(R.string.about_title), fontSize = 20.sp)
                 Text(
-                    "JBL E55BT wireless over-ear headphones bring the signature sound of JBL right to your ears." +
-                        "The E55BT is one of our most versatile packages ever.",
+                    stringResource(R.string.about_desc),
                     color = if (darktheme) SecondaryTextColorDark else SecondaryTextColor
                 )
             }
@@ -139,7 +139,7 @@ fun MainScreen(darktheme: Boolean = isSystemInDarkTheme()){
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Text("Color: ", fontSize = 20.sp, color = if (darktheme) PrimaryTextColorDark else PrimaryTextColor)
+                Text(stringResource(R.string.color_title), fontSize = 20.sp, color = if (darktheme) PrimaryTextColorDark else PrimaryTextColor)
                 Row (
                     modifier = Modifier.width(120.dp),
                     horizontalArrangement = Arrangement.SpaceEvenly,
@@ -157,7 +157,7 @@ fun MainScreen(darktheme: Boolean = isSystemInDarkTheme()){
                     containerColor = if (darktheme) ButtonBackGroundDark else ButtonBackGround,
                     contentColor = if (darktheme) ButtonTextColorDark else ButtonTextColor)
                 ) {
-                Text("Add to Cart", fontSize = 25.sp)
+                Text( stringResource(R.string.cart_button_title),fontSize = 25.sp)
                 Spacer(modifier = Modifier.width(20.dp))
                 Icon(Icons.Rounded.ShoppingCart, contentDescription = "")
             }
